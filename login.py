@@ -47,6 +47,8 @@ def runUntilExit():
 			if ec == "e":
 				print("Okay! Exiting")
 				exit_condition = True
+				driver.close()
+				sys.exit()
 			elif ec == "r":
 				driver.close()
 				print("Restarting program")
