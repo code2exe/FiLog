@@ -13,7 +13,7 @@ def main():
 	options = webdriver.FirefoxOptions
 	# options.set_headless(True)
 	global driver
-	driver = webdriver.Chrome(chrome_options=options)
+	driver = webdriver.Firefox(firefox_options=options)
 	driver.get('https://www.fiverr.com')
 	sleep(5)
 	# LOGIN
