@@ -45,7 +45,7 @@ def runUntilExit():
 			print("An error occured")
 			ec = input("Type (e) to exit or (r) to restart \n")
 			if ec == "e":
-				print("you typed", ec)
+				print("Okay! Exiting")
 				exit_condition = True
 			elif ec == "r":
 				driver.close()
