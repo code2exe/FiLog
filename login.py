@@ -10,7 +10,7 @@ user = pwd['Credentials']['username']
 pas = pwd['Credentials']['password']
 
 def main():
-	options = webdriver.FirefoxOptions
+	options = webdriver.FirefoxOptions()
 	# options.set_headless(True)
 	global driver
 	driver = webdriver.Firefox(firefox_options=options)
@@ -31,8 +31,8 @@ def main():
 	auto.click(410, 503, clicks=1, button='left')
 	auto.typewrite(pas)
 	sleep(2)
-	auto.moveTo(410, 503, duration=0.25)
-	auto.click(410, 503, clicks=1, button='left')
+	auto.moveTo(519, 572, duration=0.25)
+	auto.click(519, 572, clicks=1, button='left')
 	sleep(1)
 
 
